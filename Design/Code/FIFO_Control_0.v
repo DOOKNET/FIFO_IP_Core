@@ -30,7 +30,7 @@ wire	empty;
 wire	[9:0]	rd_data_count;
 wire	[9:0]	wr_data_count;
 
-reg		uart_en = 0;
+reg		uart_en = 0;		//uart使能信号
 
 assign	tx_ready = data_valid;
 
@@ -44,7 +44,7 @@ always @(posedge clk) begin
     case (current_state)
         state_0:
             begin
-                if((rx_ready == 1) && (data_valid == 1))    begin
+                if((rx_ready == 1) && (data_valid == 1))    begin	//单片机准备接收，FIFO准备填充
                     next_state <= state_1;
                 end
                 else    begin
@@ -53,7 +53,7 @@ always @(posedge clk) begin
             end 
         state_1:
             begin
-                if((rx_ready == 1) && (full == 1))    begin
+                if((rx_ready == 1) && (full == 1))    begin			//单片机还在接收，FIFO填满
                     next_state <= state_2;
                 end
 				else	begin
@@ -62,7 +62,7 @@ always @(posedge clk) begin
             end
         state_2:
             begin
-                if(rx_ready == 0)    begin
+                if(rx_ready == 0)    begin							//单片机停止接收
                     next_state <= state_0;
                 end
                 else    begin

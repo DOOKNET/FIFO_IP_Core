@@ -10,13 +10,13 @@
 module tb_fifo_0();
 
 //-----------------接口定义-------------------=//
-reg 	sclk;			//系统时钟
-reg		rd_clk;			//读数据时钟
+reg 	sclk;				//系统时钟
+reg		rd_clk;				//读数据时钟
 reg		data_tvalid = 0;	//FFT数据准备完毕
-reg		[13:0]	data;	//数据
-reg		rx_ready;
+reg		[13:0]	data;		//数据
+reg		rx_ready;			//单片机接收准备
 
-wire	tx_ready;
+wire	tx_ready;			//uart发送准备
 wire	data_out;
 
 //===============产生时钟信号==================//
