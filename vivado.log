@@ -1,0 +1,1841 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 22 10:44:41 2017
+# Process ID: 1016
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7256 E:\Workspace\Vivado_16.4\2017_11_22_FIFO_IP_Core\FIFO_IP.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 795.480 ; gain = 134.039
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v
+update_compile_order -fileset sim_1
+add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+ERROR: [VRFC 10-529] concurrent assignment to a non-net data_valid_pose is not permitted [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:42]
+ERROR: [VRFC 10-1040] module FIFO_Control_0 ignored due to previous errors [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:6]
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+ERROR: [VRFC 10-91] cnt is not declared [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:32]
+ERROR: [VRFC 10-91] cnt is not declared [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:33]
+ERROR: [VRFC 10-91] cnt is not declared [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:36]
+ERROR: [VRFC 10-91] cnt is not declared [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:41]
+ERROR: [VRFC 10-91] cnt is not declared [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:43]
+ERROR: [VRFC 10-91] cnt is not declared [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:45]
+ERROR: [VRFC 10-1040] module tb_fifo_0 ignored due to previous errors [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:7]
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port rd_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:116]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port wr_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:117]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fifo_0_behav -key {Behavioral:sim_1:Functional:tb_fifo_0} -tclbatch {tb_fifo_0.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source tb_fifo_0.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fifo_0_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 895.238 ; gain = 6.473
+run 100 us
+run 100 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_wave {{/tb_fifo_0/FIFO_Control_0_inst0/clk}} {{/tb_fifo_0/FIFO_Control_0_inst0/wr_clk}} {{/tb_fifo_0/FIFO_Control_0_inst0/rd_clk}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_valid}} {{/tb_fifo_0/FIFO_Control_0_inst0/rx_ready}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_re}} {{/tb_fifo_0/FIFO_Control_0_inst0/tx_ready}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_out}} {{/tb_fifo_0/FIFO_Control_0_inst0/current_state}} {{/tb_fifo_0/FIFO_Control_0_inst0/next_state}} {{/tb_fifo_0/FIFO_Control_0_inst0/wr_en}} {{/tb_fifo_0/FIFO_Control_0_inst0/rd_en}} {{/tb_fifo_0/FIFO_Control_0_inst0/full}} {{/tb_fifo_0/FIFO_Control_0_inst0/empty}} {{/tb_fifo_0/FIFO_Control_0_inst0/rd_data_count}} {{/tb_fifo_0/FIFO_Control_0_inst0/wr_data_count}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_valid_pose}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_valid_r0}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_valid_r1}} {{/tb_fifo_0/FIFO_Control_0_inst0/state_0}} {{/tb_fifo_0/FIFO_Control_0_inst0/state_1}} {{/tb_fifo_0/FIFO_Control_0_inst0/state_2}} 
+run 100 us
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port rd_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:116]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port wr_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:117]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 895.238 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port rd_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:116]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port wr_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:117]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 904.605 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port rd_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:116]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port wr_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:117]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 904.605 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port rd_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:116]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port wr_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:117]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 904.605 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port rd_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:116]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port wr_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:117]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 906.762 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port rd_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:116]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port wr_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:117]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 906.762 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port rd_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:116]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port wr_data_count [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:117]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 906.762 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:88]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 906.762 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_xsim_kernel: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 913.973 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:87]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:87]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+ERROR: [VRFC 10-1412] syntax error near end [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:68]
+ERROR: [VRFC 10-1040] module FIFO_Control_0 ignored due to previous errors [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v:6]
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:87]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:87]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 913.973 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:87]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 919.145 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:89]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 919.145 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+update_compile_order -fileset sim_1
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:91]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 919.145 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:91]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 933.090 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:95]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 6. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 933.090 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fifo_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fifo_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fifo_0_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:82]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 7. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 7. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 933.090 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us

@@ -1,0 +1,172 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 22 10:44:41 2017
+# Process ID: 1016
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7256 E:\Workspace\Vivado_16.4\2017_11_22_FIFO_IP_Core\FIFO_IP.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/FIFO_IP.xpr
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v
+update_compile_order -fileset sim_1
+add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_fifo_0.tcl
+run 100 us
+run 100 us
+restart
+add_wave {{/tb_fifo_0/FIFO_Control_0_inst0/clk}} {{/tb_fifo_0/FIFO_Control_0_inst0/wr_clk}} {{/tb_fifo_0/FIFO_Control_0_inst0/rd_clk}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_valid}} {{/tb_fifo_0/FIFO_Control_0_inst0/rx_ready}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_re}} {{/tb_fifo_0/FIFO_Control_0_inst0/tx_ready}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_out}} {{/tb_fifo_0/FIFO_Control_0_inst0/current_state}} {{/tb_fifo_0/FIFO_Control_0_inst0/next_state}} {{/tb_fifo_0/FIFO_Control_0_inst0/wr_en}} {{/tb_fifo_0/FIFO_Control_0_inst0/rd_en}} {{/tb_fifo_0/FIFO_Control_0_inst0/full}} {{/tb_fifo_0/FIFO_Control_0_inst0/empty}} {{/tb_fifo_0/FIFO_Control_0_inst0/rd_data_count}} {{/tb_fifo_0/FIFO_Control_0_inst0/wr_data_count}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_valid_pose}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_valid_r0}} {{/tb_fifo_0/FIFO_Control_0_inst0/data_valid_r1}} {{/tb_fifo_0/FIFO_Control_0_inst0/state_0}} {{/tb_fifo_0/FIFO_Control_0_inst0/state_1}} {{/tb_fifo_0/FIFO_Control_0_inst0/state_2}} 
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+update_compile_order -fileset sim_1
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us

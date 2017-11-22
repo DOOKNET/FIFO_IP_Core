@@ -1,0 +1,22 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1703d794b56f4285b18a201e20b969d0 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fifo_0_behav xil_defaultlib.tb_fifo_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 14 for port data_out [E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/TestBeach/tb_fifo_0.v:82]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 7. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_22_FIFO_IP_Core/Design/Code/FIFO_Control_0.v" Line 7. Module FIFO_Control_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control_0
+Compiling module xil_defaultlib.tb_fifo_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fifo_0_behav
