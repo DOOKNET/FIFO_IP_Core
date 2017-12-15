@@ -29,7 +29,8 @@ always	begin
 	rd_clk = 1;
 	#10
 	rd_clk = 0;
-end				
+end	
+	
 //===============产生valid信号=================//
 reg		[12:0]	cnt = 0;
 always @(posedge sclk) begin	
@@ -71,16 +72,15 @@ end
 
 //-------------------例化---------------------//
 FIFO_Control_0		FIFO_Control_0_inst0(
-    .clk			(sclk),            
-    .wr_clk			(sclk),         
-    .rd_clk			(rd_clk),	         
+    .clk		(sclk),            
+    .wr_clk		(sclk),         
+    .rd_clk		(rd_clk),	         
     .data_valid		(data_tvalid),     
     .rx_ready		(rx_ready),       
     .data_re		(data),
 
     .tx_ready		(tx_ready),
-	.data_out		(data_out)
+	.data_out	(data_out)
 );
-
 
 endmodule 
